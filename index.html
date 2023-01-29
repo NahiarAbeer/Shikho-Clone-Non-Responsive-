@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <header>
+
+    <header class="pc">
         <nav>
             <span>
                 <img src="images/shikho-logo.svg" alt="">
@@ -27,6 +28,30 @@
                 </ul>
             </span>
         </nav>
+    </header>
+    <header class="classic ">
+        <span>
+            <img src="images/shikho-logo.svg" alt="">
+        </span>
+        <span>
+            <button id="target" onclick="slide()"><i class="fa-solid fa-bars"></i></button>
+        </span>
+    </header>
+    <header id="sc" class="mobile-navigation">
+        <button id="close-navigation" onclick="hide()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="cont">
+            <ul class="opt">
+                <li class="active"><a href="#">Home</a></li>
+                <li class=""><a href="#">Academic program</a></li>
+                <li class=""><a href="#">Course</a></li>
+                <li ><a href="#">About Us</a></li>
+                <li ><a href="#">Bahubrihi</a></li>
+                <li><a href="#">Log
+                        in/Sign Up</a></li>
+            </ul>
+        </div>
     </header>
 
     <section class="promo">
@@ -130,7 +155,8 @@
             </form>
         </div>
         <div class="img">
-            <img src="https://shikho.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook-appointment.72d312d9.png&w=1920&q=75" alt="">
+            <img src="https://shikho.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook-appointment.72d312d9.png&w=1920&q=75"
+                alt="">
         </div>
     </section>
 
