@@ -90,16 +90,18 @@ body {
     background-image: url('images/bg1\(blue\).webp');
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 110vh;
-    height: auto;
+    height: 120vh;
     color: #fff;
     padding: 0 135px;
     align-items: center;
     background-size: cover;
+    
 }
+
 
 .promo .txt .big {
     font-size: 48px;
+    
 }
 
 .promo .txt .small {
@@ -108,7 +110,7 @@ body {
 }
 
 .link {
-    top: 90px;
+    display: flex;
 }
 
 .link a {
@@ -387,7 +389,7 @@ body {
 }
 
 /* now there is responsive part  */
-@media screen and (max-width: 1256px) {
+@media screen and (max-width: 1256px) { 
     .pc {
         display: none;
     }
@@ -419,10 +421,10 @@ body {
     }
 
     .promo {
-        height: auto;
+        max-height: 130vh;
         display: flex;
         flex-direction: column;
-        min-height: 200vh;
+        height: auto;
     }
 
     .txt {
@@ -445,21 +447,29 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .link a:first-child {
+        margin-right: 0;
 
+    }
     .link a {
-        width: 100%;
         margin: 20px 0;
         text-align: center;
     }
+    .promo {
+        padding: 0 10px;
 
+    }
     .promo .pic {
-        top: 100px;
-        bottom: 150px;
+        bottom: 50px;
         position: relative;
+    }
+    .promo .pic img{
+        width: 100vw;
+
     }
 
     .f {
-        top: 9px;
+        margin-top: 50px;
         position: relative;
         z-index: 1;
     }
@@ -479,6 +489,8 @@ body {
     }
 
     .course {
+        height: 120vh;
+        place-items: center;
         height: auto;
         top: 30px;
     }
@@ -500,8 +512,9 @@ body {
     .course .box .pics {
         cursor: pointer;
         box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
-        width: 260px;
+        width: auto;
         height: auto;
+        margin: 0;
         border-radius: 7px;
         transition-delay: 1s;
         transition: all 1.5s ease-in-out;
@@ -512,10 +525,9 @@ body {
         
     }
     .sign-in .inp {
-        margin: 0 auto;
         width: 100%;
     }
     .sign-in img {
         display: none;
     }
-}
+} 
