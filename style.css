@@ -399,7 +399,6 @@ body {
     display: none;
 }
 
-/* now there is responsive part  */
 @media screen and (max-width: 1230px) {
     body {
         
